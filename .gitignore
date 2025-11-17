@@ -1,0 +1,40 @@
+
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/build/
+/storybook-static/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor stuff
+.DS_Store
+.vscode/
+.idea/
+
+# Storybook cache
+node_modules/.cache/
+.storybook-cache/
+
+# Lockfiles (optional)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Temp
+*.tmp
+*.swp
+
+# Typescript build info
+*.tsbuildinfo
