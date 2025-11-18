@@ -19,16 +19,12 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   disabled = false,
   size = 'md'
 }) => {
-  const handleChange = () => {
-    if(!disabled) onChange(!checked);
-  }
-
-  return (
+    return (
     <label className={`uz-checkbox uz-checkbox-${size} ${disabled ? "disabled" : ""}`}>
       <input 
 	type="checkbox"
 	checked={checked}
-	onChange={handleChange}
+	onChange={() => onChange(!checked)}
 	disabled={disabled}/>
       <span className="checkmark"/>
       {label && <span className="checkbox-label">{label}</span>}
